@@ -2,8 +2,6 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def test(request):
-    return render(request, "AppIntermedio/index.html")
 
 
 def libros(request):
@@ -12,3 +10,8 @@ def libros(request):
 def inicio(request):
     return render(request,"AppIntermedio/inicio.html")
 
+def crear(request):
+    return render(request,"libros/crear.html") 
+
+def editar(request):
+    return render(request,"libros/editar.html") 
