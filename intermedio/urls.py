@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from AppIntermedio.views import libros, inicio, crear, editar, ubicacion, buscar
+from AppIntermedio.views import libros, inicio, crear, editar, ubicacion, buscar, contacto, datoscontacto
 
 
 
@@ -27,4 +27,6 @@ urlpatterns = [
     path('libros/editar', editar, name='editar'),
     path('ubicacion/', ubicacion, name='ubicacion'),
     path('ubicacion/buscar', buscar, name='buscar'),
+    path('contacto/', contacto, name='contacto'),
+    path('contacto/datoscontacto', datoscontacto, name='datoscontacto'),
 ]

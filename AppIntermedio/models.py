@@ -21,3 +21,9 @@ class Ubicacion(models.Model):
     def __str__(self):
         fila = "Titulo: " + self.titulo
         return fila
+
+class Contacto(models.Model):
+    titulo = models.CharField(max_length=100, verbose_name='Título')
+    def __str__(self):
+        fila = "Titulo: " + self.titulo
+        return fila

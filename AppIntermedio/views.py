@@ -22,3 +22,8 @@ def ubicacion(request):
 def buscar(request):
     return render(request, "ubicacion/buscar.html")
 
+def contacto(request):
+    return render(request, "contacto/contacto.html")
+
+def datoscontacto(request):
+    return render(request, "contacto/contacto.html")
